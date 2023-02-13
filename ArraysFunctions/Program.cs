@@ -1,5 +1,3 @@
-﻿// Набор функций для работы с массивами
-
 //=====================================================================================================================
 // Функция создает массив случайных целых элементов
 int[] createRandArr(int size, int min, int max)
@@ -10,6 +8,7 @@ int[] createRandArr(int size, int min, int max)
     {
         arr[i] = random.Next(min, max+1);
         //Console.WriteLine($"arr[{i}] = {arr[i]}");
+        //Console.WriteLine(string.Join(" ",arr));
     }
     return arr;
 }
@@ -23,14 +22,14 @@ int[] createArr(int size)
     {
         arr[i] = IntInput("arr[" + i + "]");
         //Console.WriteLine($"arr[{i}] = {arr[i]}");
+        //Console.WriteLine(string.Join(" ",arr));
     }
     return arr;
 }
 
 //=====================================================================================================================
 // Функция принимает число из консоли и обходит ошибку ввода
-int IntInput(string intName) // функция принимает число из консоли, преобразуя его в целое
-                            // зело ругаеццо при косячном вводе
+int IntInput(string intName) // функция принимает число из консоли, преобразуя его в целое                   
 {
     int num;
 
